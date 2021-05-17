@@ -1,0 +1,21 @@
+package com.costinel.Workshop.config;
+
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.UrlBasedViewResolver;
+
+@Configuration
+@ComponentScan("com.costinel.Workshop")
+@EnableWebMvc
+public class WorkshopMvcConfig extends WebMvcConfigurerAdapter {
+
+    @Bean
+    public UrlBasedViewResolver urlBasedViewResolver(){
+        UrlBasedViewResolver resolver = new UrlBasedViewResolver();
+        resolver.setPrefix("/WEB-INF");
+    }
+}
