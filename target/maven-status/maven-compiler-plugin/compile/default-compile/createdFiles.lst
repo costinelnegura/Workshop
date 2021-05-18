@@ -1,0 +1,5 @@
+com\costinel\Workshop\config\WorkshopMvcInitializer.class
+com\costinel\Workshop\config\WorkshopMvcConfig.class
+com\costinel\Workshop\controller\WorkshopController.class
+com\costinel\Workshop\service\WorkshopService.class
+com\costinel\Workshop\service\GenericWelcomeService.class
