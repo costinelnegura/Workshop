@@ -1,5 +1,10 @@
-com\costinel\Workshop\config\WorkshopMvcInitializer.class
-com\costinel\Workshop\config\WorkshopMvcConfig.class
+com\timbuchalka\springdemo\controller\WelcomeController.class
 com\costinel\Workshop\controller\WorkshopController.class
+com\timbuchalka\springdemo\service\GenericWelcomeService.class
+com\timbuchalka\springdemo\config\WebMvcConfig.class
+com\costinel\Workshop\config\WorkshopMvcInitializer.class
+com\timbuchalka\springdemo\config\WebMvcInitialiser.class
+com\costinel\Workshop\config\WorkshopMvcConfig.class
+com\timbuchalka\springdemo\service\WelcomeService.class
 com\costinel\Workshop\service\WorkshopService.class
 com\costinel\Workshop\service\GenericWelcomeService.class
