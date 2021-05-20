@@ -29,7 +29,22 @@ public class WelcomeController {
 	}
 
 	@RequestMapping("/home")
-	public String test(Model model){
+	public String home(Model model){
 		return "home";
+	}
+
+	@RequestMapping("/newjob")
+	public String newJob(Model model){
+		return "newJob";
+	}
+
+	@RequestMapping("/invoice")
+	public String invoice(Model model){
+		return "invoice";
+	}
+
+	@RequestMapping("/tools")
+	public String tools(Model model){
+		return "tools";
 	}
 }

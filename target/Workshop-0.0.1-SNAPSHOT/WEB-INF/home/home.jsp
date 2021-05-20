@@ -11,12 +11,14 @@
     <title>Workshop - Home</title>
     <div>
         <a href="">New</a>
-        <a href="">Nome</a>
+        <a href="">Home</a>
         <a href="">Invoice</a>
         <a href="">Tools</a><hr>
     </div>
 </head>
 <body>
+
+    <p align="center">Under Construction</p>
 
 </body>
 </html>
