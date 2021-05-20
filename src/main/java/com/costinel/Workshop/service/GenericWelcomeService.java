@@ -6,3 +6,4 @@ public interface GenericWelcomeService {
 	public List<String> getWelcomeMessage(String name);
 
 }
+

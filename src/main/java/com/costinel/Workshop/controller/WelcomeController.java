@@ -25,6 +25,11 @@ public class WelcomeController {
 		model.addAttribute("myWelcomeMessage", welcomeMessage);
 		
 		// 3.  Return logical view name
-		return "welcomeNew";
+		return "welcome";
+	}
+
+	@RequestMapping("/home")
+	public String test(Model model){
+		return "home";
 	}
 }

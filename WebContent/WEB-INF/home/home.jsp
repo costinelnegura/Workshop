@@ -1,16 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%--
+  Created by IntelliJ IDEA.
+  User: Costinel.G
+  Date: 19/05/2021
+  Time: 15:51
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome!</title>
+    <title>Workshop - Home</title>
+    <div>
+        <a href="">New</a>
+        <a href="">Home</a>
+        <a href="">Invoice</a>
+        <a href="">Tools</a><hr>
+    </div>
 </head>
 <body>
-	<c:forEach var="messageItem" items="${myWelcomeMessage}">
-		<c:out value="${messageItem}"></c:out>
-	</c:forEach>
+
 </body>
 </html>

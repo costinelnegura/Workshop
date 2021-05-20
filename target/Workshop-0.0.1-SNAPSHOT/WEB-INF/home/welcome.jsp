@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome!</title>
+<title>Workshop - Welcome!</title>
 </head>
 <body>
 	<c:forEach var="messageItem" items="${myWelcomeMessage}">

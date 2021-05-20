@@ -14,7 +14,7 @@ public class WelcomeService implements GenericWelcomeService {
 		// Add data to the list
 		myWelcomeMessage.add("Hello! ");
 		myWelcomeMessage.add(name);
-		myWelcomeMessage.add(", welcome to the Spring course :-)");
+		myWelcomeMessage.add(", welcome to the Workshop");
 		
 		return myWelcomeMessage;
 	}
