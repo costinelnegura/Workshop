@@ -8,17 +8,104 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Workshop - Home</title>
-    <div>
-        <a href="">New</a>
-        <a href="">Home</a>
-        <a href="">Invoice</a>
-        <a href="">Tools</a><hr>
-    </div>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
 </head>
 <body>
 
-    <p align="center">Under Construction</p>
+<header>
+    <h2><a>New </a><a>Search </a><a>Home </a><a>Invoice </a><a>Tools</a></h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">Customer</a></li>
+            <li><a href="#">Vehicle</a></li>
+            <li><a href="#">Delivery/Collection</a></li>
+            <li><a href="#">Claim Details</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Labour</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">Extra Charges</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Customer</h1>
+        <p>Details about the customer</p>
+    </article>
+</section>
+
+<footer>
+    <p>Workshop 2021</p>
+</footer>
+
 
 </body>
 </html>

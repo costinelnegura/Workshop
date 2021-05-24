@@ -11,6 +11,7 @@
     <title>Workshop - Tools</title>
     <div>
         <a href="">New</a>
+        <a href="">Search</a>
         <a href="">Home</a>
         <a href="">Invoice</a>
         <a href="">Tools</a><hr>
