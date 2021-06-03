@@ -76,7 +76,8 @@
 <body>
 
 <header>
-    <h2><a>New </a><a>Search </a><a>Home </a><a>Invoice </a><a>Tools</a></h2>
+    <h1>Workshop</h1>
+    <h3><a>New </a><a>Search </a><a>Home </a><a>Invoice </a><a>Tools</a></h3>
 </header>
 
 <section>
@@ -104,6 +105,7 @@
 
 <footer>
     <p>Workshop 2021</p>
+    <p>Made by Costinel Negura</p>
 </footer>
 
 
