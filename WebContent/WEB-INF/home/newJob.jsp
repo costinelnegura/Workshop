@@ -46,7 +46,7 @@
         padding: 20px;
         width: 100%;
         background-color: #f1f1f1;
-        height: 500px; /* only for demonstration, should be removed */
+
     }
 
     /* Clear floats after the columns */
@@ -58,7 +58,7 @@
 
     .column {
         float: left;
-        width: 10%;
+        width: 15%;
         padding: 10px;
 
     }
@@ -70,13 +70,7 @@
         clear: both;
     }
 
-    label {
-        display: block;
-    }
-    
-    select, input {
-        margin-bottom: 15px;
-    }
+
     /* Style the footer */
     footer {
         background-color: #777;
@@ -95,69 +89,120 @@
 </style>
     <title>
 
-
     </title>
 </head>
 <body>
 
 <header>
     <h1>Workshop</h1>
-    <h3><a>New </a><a>Search </a><a>Home </a><a>Invoice </a><a>Tools</a></h3>
+    <h3></h3><a>Home </a><a>New </a><a>Search </a><a>Invoice </a><a>Tools</a></h3>
 </header>
 
 <section>
     <article>
         <div class="row">
             <div class="column">
-                <label>Salutation:</label><br>
-                <label for="fname">First name:</label><br>
-                <label for="lname">Last name:</label><br>
-                <label for="address">Address:</label><br>
-
-                <label for="postcode">Postcode:</label><br>
-
-                <label for="mobile">Mobile Number:</label><br>
-
-                <label for="email">Email:</label><br>
-
-                <label for="vehicle_make">Vehicle Make:</label><br>
-
-                <label for="vehicle_model">Vehicle Model:</label><br>
-
-                <label for="vehicle_registration">Vehicle Registration:</label><br>
-
-                <label for="notes">Notes:</label><br>
+                <label>Salutation:</label>
             </div>
-
             <div class="column">
                 <select name="salutation" id="salutation">
                     <option value="Mr">Mr</option>
                     <option value="Mrs">Mrs</option>
                     <option value="Miss">Miss</option>
-                </select><br>
-                <input type="text" id="fname" name="fname"><br>
-                <input type="text" id="lname" name="lname">
-                <input type="text" id="address" name="address"><br>
-                <input type="text" id="postcode" name="postcode"><br>
-                <input type="text" id="mobile" name="mobile"><br>
-                <input type="text" id="email" name="email"><br>
-                <input type="text" id="vehicle_make" name="vehicle_make"><br>
-                <input type="text" id="vehicle_model" name="vehicle_model"><br>
-                <input type="text" id="vehicle_registration" name="vehicle_registration"><br>
-                <input type="text" id="notes" name="notes"><br>
+                </select>
             </div>
         </div>
-
+        <div class="row">
+            <div class="column">
+                <label for="fname">First name:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="fname" name="fname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="lname">Last name:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="lname" name="lname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="address">Address:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="address" name="address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="postcode">Postcode:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="postcode" name="postcode">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="mobile">Mobile Number:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="mobile" name="mobile">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="email">Email:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="email" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="vehicle_make">Vehicle Make:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="vehicle_make" name="vehicle_make">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="vehicle_model">Vehicle Model:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="vehicle_model" name="vehicle_model">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="vehicle_registration">Vehicle Registration:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="vehicle_registration" name="vehicle_registration">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="notes">Notes:</label>
+            </div>
+            <div class="column">
+                <input type="text" id="notes" name="notes">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel">
+        </div>
     </article>
-    <input type="submit" value="Submit">
-    <input type="button" value="Cancel"><br>
 </section>
 
 <footer>
     <p>Workshop 2021</p>
     <p>Made by Costinel Negura</p>
 </footer>
-
 
 </body>
 </html>
