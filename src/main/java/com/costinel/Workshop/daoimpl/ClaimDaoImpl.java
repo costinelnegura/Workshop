@@ -13,7 +13,7 @@ public class ClaimDaoImpl implements ClaimDao {
 
     // wrapping the data source into an instance of jdbcTemplate
     // the data source will be injected from an xml configuration file with its own bean declaration.
-    // the data source its a factory for data source connections
+    // the data source its a factory for database connections
     @Override
     public void setDataSource(DataSource ds) {
         jdbcTemplate = new JdbcTemplate(ds);
@@ -29,7 +29,7 @@ public class ClaimDaoImpl implements ClaimDao {
         return null;
     }
 
-    // this method will return a list of all claims from the claim table
+    // this method will return a list of all claim beans from the claim table
     @Override
     public List<Claim> getAllClaims() {
         String sqlQuery = "SELECT * FROM claim";
