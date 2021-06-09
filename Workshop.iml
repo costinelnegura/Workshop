@@ -16,6 +16,7 @@
       <configuration>
         <fileset id="fileset" name="WorkshopMvcConfig" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/com/costinel/Workshop/config/WebMvcConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/beans-cp.xml</file>
         </fileset>
       </configuration>
     </facet>

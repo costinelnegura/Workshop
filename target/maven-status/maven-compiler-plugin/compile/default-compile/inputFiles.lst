@@ -1,5 +1,10 @@
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/service/WelcomeService.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/ClaimJdbcApp.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/config/WorkshopMvcInitializer.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/config/WorkshopMvcConfig.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/daoimpl/ClaimDaoImpl.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/service/GenericWelcomeService.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/domain/Claim.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/dao/ClaimDao.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/daoimpl/ClaimRowMapper.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/controller/WelcomeController.java

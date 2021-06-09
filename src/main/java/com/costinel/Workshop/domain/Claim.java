@@ -14,6 +14,23 @@ public class Claim {
     private String vehicle_registration;
     private String notes;
 
+    public Claim() {
+    }
+
+    public Claim(String salutation, String first_name, String last_name, String address, String postcode, int mobile_number, String email, String vehicle_make, String vehicle_model, String vehicle_registration, String notes) {
+        this.salutation = salutation;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.address = address;
+        this.postcode = postcode;
+        this.mobile_number = mobile_number;
+        this.email = email;
+        this.vehicle_make = vehicle_make;
+        this.vehicle_model = vehicle_model;
+        this.vehicle_registration = vehicle_registration;
+        this.notes = notes;
+    }
+
     public int getId() {
         return id;
     }
@@ -108,5 +125,23 @@ public class Claim {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    @Override
+    public String toString() {
+        return "Claim{" +
+                "id=" + id +
+                ", salutation='" + salutation + '\'' +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", address='" + address + '\'' +
+                ", postcode='" + postcode + '\'' +
+                ", mobile_number=" + mobile_number +
+                ", email='" + email + '\'' +
+                ", vehicle_make='" + vehicle_make + '\'' +
+                ", vehicle_model='" + vehicle_model + '\'' +
+                ", vehicle_registration='" + vehicle_registration + '\'' +
+                ", notes='" + notes + '\'' +
+                '}';
     }
 }

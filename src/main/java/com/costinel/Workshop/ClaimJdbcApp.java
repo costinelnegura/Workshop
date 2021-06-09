@@ -15,6 +15,14 @@ public class ClaimJdbcApp {
 
         // create the bean
         ClaimDao dao = (ClaimDao) ctx.getBean("claimDao");
+
+        //create a claim
+        Claim newClaim = new Claim("Miss", "Alex", "Dedu", "22 Albers Street",
+                "SE4 7UU", 78503, "alex@alex.com", "Mercedes",
+                "CLS", "AL70EXA", "TBA");
+        dao.create(newClaim);
+
+        // print all the claims
         List<Claim> claims = dao.getAllClaims();
         for (Claim claim : claims){
             System.out.println(claim);

@@ -2,18 +2,24 @@ package com.costinel.Workshop.daoimpl;
 
 import com.costinel.Workshop.dao.ClaimDao;
 import com.costinel.Workshop.domain.Claim;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.util.List;
 
+// @Repository is a JDBC specific annotation instead of @Component
+// This annotation is for the persistence layer
 public class ClaimDaoImpl implements ClaimDao {
 
     private JdbcTemplate jdbcTemplate;
 
     // wrapping the data source into an instance of jdbcTemplate
     // the data source will be injected from an xml configuration file with its own bean declaration.
+    // or simply by annotating it with @Autowired
     // the data source its a factory for database connections
+
     @Override
     public void setDataSource(DataSource ds) {
         jdbcTemplate = new JdbcTemplate(ds);
@@ -21,7 +27,15 @@ public class ClaimDaoImpl implements ClaimDao {
 
     @Override
     public boolean create(Claim claim) {
-        return false;
+        String sqlQuery = "INSERT INTO claim (salutation, first_name, last_name, address, postcode," +
+                " mobile_number, email, vehicle_make, vehicle_model, vehicle_registration, notes) " +
+                " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        Object[] args = new Object[] {claim.getSalutation(), claim.getFirst_name(), claim.getLast_name(),
+                                claim.getAddress(), claim.getPostcode(), claim.getMobile_number(),
+                                claim.getEmail(), claim.getVehicle_make(), claim.getVehicle_model(),
+                                claim.getVehicle_registration(), claim.getNotes()};
+        // == 1 in the return because i am creating only one live in the database
+        return jdbcTemplate.update(sqlQuery, args) == 1;
     }
 
     @Override
@@ -50,6 +64,7 @@ public class ClaimDaoImpl implements ClaimDao {
 
     @Override
     public void cleanup() {
-
+        String sqlQuery = "TRUNCATE TABLE claim";
+        jdbcTemplate.execute(sqlQuery);
     }
 }
