@@ -21,6 +21,7 @@ public class ClaimRowMapper implements RowMapper {
         claim.setVehicle_make(rs.getString("vehicle_make"));
         claim.setVehicle_model(rs.getString("vehicle_model"));
         claim.setVehicle_registration(rs.getString("vehicle_registration"));
+        claim.setNotes(rs.getString("notes"));
         return claim;
     }
 }

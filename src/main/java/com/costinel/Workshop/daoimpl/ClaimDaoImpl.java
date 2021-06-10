@@ -29,7 +29,7 @@ public class ClaimDaoImpl implements ClaimDao {
     public boolean create(Claim claim) {
         String sqlQuery = "INSERT INTO claim (salutation, first_name, last_name, address, postcode," +
                 " mobile_number, email, vehicle_make, vehicle_model, vehicle_registration, notes) " +
-                " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         Object[] args = new Object[] {claim.getSalutation(), claim.getFirst_name(), claim.getLast_name(),
                                 claim.getAddress(), claim.getPostcode(), claim.getMobile_number(),
                                 claim.getEmail(), claim.getVehicle_make(), claim.getVehicle_model(),
@@ -40,7 +40,12 @@ public class ClaimDaoImpl implements ClaimDao {
 
     @Override
     public Claim getClaim(Integer id) {
-        return null;
+        String sqlQuery = "SELECT ID, salutation, first_name, last_name, address, postcode, " +
+                "mobile_number, email, vehicle_make, vehicle_model, vehicle_registration, notes " +
+                "FROM claim WHERE id = ?";
+        Object[] args = new Object[] {id};
+        Claim claim = (Claim) jdbcTemplate.queryForObject(sqlQuery, args, new ClaimRowMapper());
+        return claim;
     }
 
     // this method will return a list of all claim beans from the claim table
@@ -54,12 +59,16 @@ public class ClaimDaoImpl implements ClaimDao {
 
     @Override
     public boolean delete(Claim claim) {
-        return false;
+        String sqlQuery = "DELETE FROM claim WHERE id = ?";
+        Object[] args = new Object[] {claim.getId()};
+        return jdbcTemplate.update(sqlQuery, args) == 1;
     }
 
     @Override
     public boolean update(Claim claim) {
-        return false;
+        String aqlQuery = "UPDATE claim SET notes = ? WHERE id = ?";
+        Object[] args = new Object[] {claim.getNotes(), claim.getId()};
+        return jdbcTemplate.update(aqlQuery, args) == 1;
     }
 
     @Override
