@@ -8,6 +8,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
 
+
+// This class is to test the DB functionality of the webapp.
+
 public class ClaimJdbcApp {
     public static void main(String[] args) {
         // creating the application context
