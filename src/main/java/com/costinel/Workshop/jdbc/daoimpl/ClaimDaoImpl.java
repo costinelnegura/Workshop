@@ -1,9 +1,8 @@
-package com.costinel.Workshop.daoimpl;
+package com.costinel.Workshop.jdbc.daoimpl;
 
-import com.costinel.Workshop.dao.ClaimDao;
-import com.costinel.Workshop.domain.Claim;
+import com.costinel.Workshop.jdbc.dao.ClaimDao;
+import com.costinel.Workshop.jdbc.domain.Claim;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

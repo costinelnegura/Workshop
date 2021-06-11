@@ -1,4 +1,4 @@
-package com.costinel.Workshop.domain;
+package com.costinel.Workshop.jdbc.domain;
 
 public class Claim {
     private int id;

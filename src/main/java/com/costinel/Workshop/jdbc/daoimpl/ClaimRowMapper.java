@@ -1,6 +1,6 @@
-package com.costinel.Workshop.daoimpl;
+package com.costinel.Workshop.jdbc.daoimpl;
 
-import com.costinel.Workshop.domain.Claim;
+import com.costinel.Workshop.jdbc.domain.Claim;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

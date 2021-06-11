@@ -7,9 +7,9 @@ import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
-//@Configuration
-//@ComponentScan("com.costinel.Workshop")
-//@EnableWebMvc
+@Configuration
+@ComponentScan("com.costinel.Workshop")
+@EnableWebMvc
 public class WorkshopMvcConfig extends WebMvcConfigurerAdapter {
 
 	@Bean

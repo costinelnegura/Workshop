@@ -1,7 +1,6 @@
-package com.costinel.Workshop.dao;
+package com.costinel.Workshop.jdbc.dao;
 
-import com.costinel.Workshop.domain.Claim;
-import org.springframework.stereotype.Service;
+import com.costinel.Workshop.jdbc.domain.Claim;
 
 import javax.sql.DataSource;
 import java.util.List;
