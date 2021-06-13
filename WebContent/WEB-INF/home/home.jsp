@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <html>
 <head>
 <style>
@@ -71,36 +73,59 @@
             height: auto;
         }
     }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 </head>
 <body>
 
 <header>
     <h1>Workshop</h1>
-    <h3><a>New </a><a>Search </a><a>Home </a><a>Invoice </a><a>Tools</a></h3>
+    <h3><a>New </a><a>Home </a><a>Invoice </a><a>Tools</a></h3>
+
+    <form action="search">
+        <input type="text" name="registration" placeholder="Search registration">
+        <input type="submit" value="Search">
+    </form>
 </header>
 
 <section>
-    <nav>
-        <ul>
-            <li><a href="#">Customer</a></li>
-            <li><a href="#">Vehicle</a></li>
-            <li><a href="#">Delivery/Collection</a></li>
-            <li><a href="#">Claim Details</a></li>
-            <li><a href="#">Notes</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Labour</a></li>
-            <li><a href="#">Parts</a></li>
-            <li><a href="#">Extra Charges</a></li>
 
-        </ul>
-    </nav>
+<table class="center">
+    <tr>
+        <th>Customer Name</th>
+        <th>Vehicle Registration</th>
+        <th>Vehicle Make</th>
+        <th>Vehicle Model</th>
+        <th>...</th>
+    </tr>
+    <sql:query var="rs" dataSource="jdbc/workshop_db">
+        SELECT * FROM claim
+    </sql:query>
 
-    <article>
-        <h1>Customer</h1>
-        <p>Details about the customer</p>
-    </article>
+    <c:forEach var="row" items="${rs.rows}">
+        <tr>
+            <th>${row.salutation} ${row.first_name} ${row.last_name}</th>
+            <th>${row.vehicle_registration}</th>
+            <th>${row.vehicle_make}</th>
+            <th>${row.vehicle_model}</th>
+            <th><a href="">Select</a></th>
+        </tr>
+    </c:forEach>
+</table>
+
+
+
+
+
 </section>
 
 <footer>

@@ -1,10 +1,8 @@
-com/costinel/Workshop/daoimpl/ClaimRowMapper.class
-com/costinel/Workshop/controller/WelcomeController.class
-com/costinel/Workshop/domain/Claim.class
+com/costinel/Workshop/controller/WorkshopController.class
+com/costinel/Workshop/service/ClaimService.class
 com/costinel/Workshop/config/WorkshopMvcConfig.class
-com/costinel/Workshop/service/GenericWelcomeService.class
-com/costinel/Workshop/ClaimJdbcApp.class
+com/costinel/Workshop/jdbc/daoimpl/ClaimRowMapper.class
+com/costinel/Workshop/jdbc/dao/ClaimDao.class
+com/costinel/Workshop/jdbc/domain/Claim.class
 com/costinel/Workshop/config/WorkshopMvcInitializer.class
-com/costinel/Workshop/dao/ClaimDao.class
-com/costinel/Workshop/service/WelcomeService.class
-com/costinel/Workshop/daoimpl/ClaimDaoImpl.class
+com/costinel/Workshop/jdbc/daoimpl/ClaimDaoImpl.class

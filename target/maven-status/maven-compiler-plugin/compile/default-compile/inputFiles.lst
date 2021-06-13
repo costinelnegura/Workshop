@@ -1,10 +1,11 @@
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/service/WelcomeService.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/ClaimJdbcApp.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/controller/WorkshopController.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/jdbc/daoimpl/ClaimDaoImpl.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/ClaimJdbcTestApp.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/config/WorkshopMvcInitializer.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/jdbc/dao/ClaimDao.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/config/WorkshopMvcConfig.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/daoimpl/ClaimDaoImpl.java
 /Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/service/GenericWelcomeService.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/domain/Claim.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/dao/ClaimDao.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/daoimpl/ClaimRowMapper.java
-/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/controller/WelcomeController.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/jdbc/domain/Claim.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/service/ClaimService.java
+/Volumes/Java_Projects/Workshop/src/main/java/com/costinel/Workshop/jdbc/daoimpl/ClaimRowMapper.java

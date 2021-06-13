@@ -13,8 +13,11 @@ public interface ClaimDao {
     // create a record in the claim table
     public boolean create(Claim claim);
 
-    // retrieve a single claim
-    public Claim getClaim(Integer id);
+    // retrieve a single claim by id
+    public Claim getClaimById(Integer id);
+
+    // retrieve a single claim by registration
+    public List<Claim> getClaimByRegistration(String registration);
 
     // retrieve all claims from the table
     public List<Claim> getAllClaims();

@@ -9,8 +9,13 @@
 <title>Workshop - Welcome!</title>
 </head>
 <body>
-	<c:forEach var="messageItem" items="${myWelcomeMessage}">
-		<c:out value="${messageItem}"></c:out>
-	</c:forEach>
+
+	<h2><c:out value="${welcomeMessage}"></c:out></h2>
+
+	<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+	<ul>
+		<li><a href="${contextPath}/home">Click here to begin</a><br/></li>
+	</ul>
 </body>
 </html>

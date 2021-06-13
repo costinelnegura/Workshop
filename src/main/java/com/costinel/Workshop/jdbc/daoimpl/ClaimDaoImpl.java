@@ -43,7 +43,7 @@ public class ClaimDaoImpl implements ClaimDao {
     }
 
     @Override
-    public Claim getClaim(Integer id) {
+    public Claim getClaimById(Integer id) {
         // if i want to parse separate parameters that don't correspond to a specific bean
         // then i have to use the MapSqlParameterSource
         SqlParameterSource params = new MapSqlParameterSource("ID", id);
@@ -52,6 +52,16 @@ public class ClaimDaoImpl implements ClaimDao {
                 "FROM claim WHERE id = :ID";
         Claim claim = (Claim) namedParameterJdbcTemplate.queryForObject(sqlQuery, params, new ClaimRowMapper());
         return claim;
+    }
+
+    @Override
+    public List<Claim> getClaimByRegistration(String registration) {
+        SqlParameterSource params = new MapSqlParameterSource("registration", registration);
+        String sqlQuery = "SELECT ID, salutation, first_name, last_name, address, postcode, " +
+                "mobile_number, email, vehicle_make, vehicle_model, vehicle_registration, notes " +
+                "FROM claim WHERE vehicle_registration = :registration";
+        List<Claim> claimList = namedParameterJdbcTemplate.query(sqlQuery, params, new ClaimRowMapper());
+        return claimList;
     }
 
     // this method will return a list of all claim beans from the claim table
