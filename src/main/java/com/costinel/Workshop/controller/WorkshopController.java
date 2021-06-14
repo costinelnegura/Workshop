@@ -25,7 +25,7 @@ public class WorkshopController {
 		return "home";
 	}
 
-	@RequestMapping("/newjob")
+	@RequestMapping("/newJob")
 	public String newJob(Model model){
 		return "newJob";
 	}

@@ -77,9 +77,19 @@
 </head>
 <body>
 
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 <header>
     <h1>Workshop</h1>
-    <h3><a>New </a><a>Home </a><a>Invoice </a><a>Tools</a></h3>
+    <h3>
+        <a href="${contextPath}/newJob">New </a><a href="${contextPath}/home">Home </a>
+        <a href="${contextPath}/invoice">Invoice </a><a href="${contextPath}/tools">Tools</a>
+    </h3>
+
+    <form action="search">
+        <input type="text" name="registration" placeholder="Search registration">
+        <input type="submit" value="Search">
+    </form>
 </header>
 
 <section>
