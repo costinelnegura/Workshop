@@ -111,102 +111,106 @@
 
 <section>
     <article>
-        <div class="row">
-            <div class="column">
-                <label>Salutation:</label>
+        <form action="Create">
+            <div class="row">
+                <div class="column">
+                    <label>Salutation:</label>
+                </div>
+                <div class="column">
+                    <select name="salutation" id="salutation">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                </div>
             </div>
-            <div class="column">
-                <select name="salutation" id="salutation">
-                    <option value="Mr">Mr</option>
-                    <option value="Mrs">Mrs</option>
-                    <option value="Miss">Miss</option>
-                </select>
+            <div class="row">
+                <div class="column">
+                    <label for="fname">First name:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="fname" name="fname">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="fname">First name:</label>
+            <div class="row">
+                <div class="column">
+                    <label for="lname">Last name:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="lname" name="lname">
+                </div>
             </div>
-            <div class="column">
-                <input type="text" id="fname" name="fname">
+            <div class="row">
+                <div class="column">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="address" name="address">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="lname">Last name:</label>
+            <div class="row">
+                <div class="column">
+                    <label for="postcode">Postcode:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="postcode" name="postcode">
+                </div>
             </div>
-            <div class="column">
-                <input type="text" id="lname" name="lname">
+            <div class="row">
+                <div class="column">
+                    <label for="mobile">Mobile Number:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="mobile" name="mobile">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="address">Address:</label>
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="email" name="email">
+                </div>
             </div>
-            <div class="column">
-                <input type="text" id="address" name="address">
+            <div class="row">
+                <div class="column">
+                    <label for="vehicle_make">Vehicle Make:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="vehicle_make" name="vehicle_make">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="postcode">Postcode:</label>
+            <div class="row">
+                <div class="column">
+                    <label for="vehicle_model">Vehicle Model:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="vehicle_model" name="vehicle_model">
+                </div>
             </div>
-            <div class="column">
-                <input type="text" id="postcode" name="postcode">
+            <div class="row">
+                <div class="column">
+                    <label for="vehicle_registration">Vehicle Registration:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="vehicle_registration" name="vehicle_registration">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="mobile">Mobile Number:</label>
+            <div class="row">
+                <div class="column">
+                    <label for="notes">Notes:</label>
+                </div>
+                <div class="column">
+                    <input type="text" id="notes" name="notes">
+                </div>
             </div>
-            <div class="column">
-                <input type="text" id="mobile" name="mobile">
+            <div class="row">
+                <input type="submit" value="Create">
             </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="email">Email:</label>
-            </div>
-            <div class="column">
-                <input type="text" id="email" name="email">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="vehicle_make">Vehicle Make:</label>
-            </div>
-            <div class="column">
-                <input type="text" id="vehicle_make" name="vehicle_make">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="vehicle_model">Vehicle Model:</label>
-            </div>
-            <div class="column">
-                <input type="text" id="vehicle_model" name="vehicle_model">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="vehicle_registration">Vehicle Registration:</label>
-            </div>
-            <div class="column">
-                <input type="text" id="vehicle_registration" name="vehicle_registration">
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <label for="notes">Notes:</label>
-            </div>
-            <div class="column">
-                <input type="text" id="notes" name="notes">
-            </div>
-        </div>
-        <div class="row">
-            <input type="submit" value="Submit">
-            <input type="button" value="Cancel">
-        </div>
+        </form>
+        <form class="row" action="${contextPath}/home">
+            <input type="submit" value="Cancel">
+        </form>
     </article>
 </section>
 

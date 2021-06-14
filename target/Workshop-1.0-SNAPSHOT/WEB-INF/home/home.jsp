@@ -106,11 +106,11 @@
 
 <table class="center">
     <tr>
+        <th>ID</th>
         <th>Customer Name</th>
         <th>Vehicle Registration</th>
         <th>Vehicle Make</th>
         <th>Vehicle Model</th>
-        <th>...</th>
     </tr>
     <sql:query var="rs" dataSource="jdbc/workshop_db">
         SELECT * FROM claim
@@ -118,11 +118,13 @@
 
     <c:forEach var="row" items="${rs.rows}">
         <tr>
+           <form action="select">
+               <th><input type="submit" value="${row.id}" name="id"></th>
+           </form>
             <th>${row.salutation} ${row.first_name} ${row.last_name}</th>
             <th>${row.vehicle_registration}</th>
             <th>${row.vehicle_make}</th>
             <th>${row.vehicle_model}</th>
-            <th><a href="">Select</a></th>
         </tr>
     </c:forEach>
 </table>

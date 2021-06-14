@@ -112,40 +112,13 @@
     <article>
         <h1>Customer</h1>
         <p>Details about the customer</p>
+
+
     </article>
 
 
     // a search text box will be on the home page to search by the registration number only (for now)
     // all of the claims will be listed here when ome is clicked
-
-<table>
-
-    <tr>
-        <th>Customer Name</th>
-        <th>Vehicle Registration</th>
-        <th>Vehicle Make</th>
-        <th>vehicle Model</th>
-        <th>...</th>
-    </tr>
-    <sql:query var="rs" dataSource="jdbc/workshop_db">
-        SELECT * FROM claim
-    </sql:query>
-
-    <c:forEach var="row" items="${rs.rows}">
-        <tr>
-            <th>${row.salutation} ${row.first_name} ${row.astname}</th>
-            <th>${row.vehicle_registration}</th>
-            <th>${row.vehicle_make}</th>
-            <th>${row.vehicle_model}</th>
-            <th><a href="">Select</a></th>
-        </tr>
-    </c:forEach>
-</table>
-
-
-
-
-
 </section>
 
 <footer>

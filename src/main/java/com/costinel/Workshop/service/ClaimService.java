@@ -22,4 +22,12 @@ public class ClaimService {
         List<Claim> claimsbyRegistration = claimDao.getClaimByRegistration(registration);
         return claimsbyRegistration;
     }
+
+    public Claim getClaim(int id){
+        return claimDao.getClaimById(id);
+    }
+
+    public void createClaim(Claim claim){
+        claimDao.create(claim);
+    }
 }
