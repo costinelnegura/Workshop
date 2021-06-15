@@ -62,9 +62,16 @@ public class WorkshopController {
 		return "home";
 	}
 
-	@RequestMapping(value = "select", method = RequestMethod.GET, params = "id")
-	public String selectClaim(@RequestParam int id, Model model){
-		model.addAttribute(claimService.getClaim(id));
-		return "claimDetailed";
+	@RequestMapping(value = "details_customer", method = RequestMethod.GET, params = "id")
+	public String detailsCustomer(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_customer";
 	}
+
+	@RequestMapping(value = "details_vehicle", method = RequestMethod.GET, params = "id")
+	public String detailsVehicle(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_vehicle";
+	}
+
 }

@@ -118,7 +118,7 @@
 
     <c:forEach var="row" items="${rs.rows}">
         <tr>
-           <form action="select">
+           <form action="details_customer">
                <th><input type="submit" value="${row.id}" name="id"></th>
            </form>
             <th>${row.salutation} ${row.first_name} ${row.last_name}</th>
