@@ -74,4 +74,58 @@ public class WorkshopController {
 		return "details/details_vehicle";
 	}
 
+	@RequestMapping(value = "details_delivery_collection", method = RequestMethod.GET, params = "id")
+	public String detailsDeliveryCollection(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_delivery_collection";
+	}
+
+	@RequestMapping(value = "details_claim", method = RequestMethod.GET, params = "id")
+	public String detailsClaim(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_claim";
+	}
+
+	@RequestMapping(value = "details_notes", method = RequestMethod.GET, params = "id")
+	public String detailsNotes(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_notes";
+	}
+
+	@RequestMapping(value = "details_images", method = RequestMethod.GET, params = "id")
+	public String detailsImages(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_images";
+	}
+
+	@RequestMapping(value = "details_history", method = RequestMethod.GET, params = "id")
+	public String detailsHistory(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_history";
+	}
+
+	@RequestMapping(value = "details_labour", method = RequestMethod.GET, params = "id")
+	public String detailsLabour(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_labour";
+	}
+
+	@RequestMapping(value = "details_parts", method = RequestMethod.GET, params = "id")
+	public String detailsParts(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_parts";
+	}
+
+	@RequestMapping(value = "details_extra_charges", method = RequestMethod.GET, params = "id")
+	public String detailsExtraCharges(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_extra_charges";
+	}
+
+	@RequestMapping(value = "details_estimate", method = RequestMethod.GET, params = "id")
+	public String detailsEstimate(@RequestParam int id, Model model){
+		model.addAttribute("customer", claimService.getClaim(id));
+		return "details/details_estimate";
+	}
+
 }

@@ -95,23 +95,23 @@
 <section>
   <nav>
     <ul>
-      <li><a href="#">Customer</a></li>
-      <li><a href="#">Vehicle</a></li>
-      <li><a href="#">Delivery/Collection</a></li>
-      <li><a href="#">Claim Details</a></li>
-      <li><a href="#">Notes</a></li>
-      <li><a href="#">Images</a></li>
-      <li><a href="#">History</a></li>
-      <li><a href="#">Labour</a></li>
-      <li><a href="#">Parts</a></li>
-      <li><a href="#">Extra Charges</a></li>
-      <li><a href="#">Estimate</a></li>
+      <li><a href="${contextPath}/details_customer?id=${customer.id}">Customer</a></li>
+      <li><a href="${contextPath}/details_vehicle?id=${customer.id}">Vehicle</a></li>
+      <li><a href="${contextPath}/details_delivery_collection?id=${customer.id}">Delivery/Collection</a></li>
+      <li><a href="${contextPath}/details_claim?id=${customer.id}">Claim Details</a></li>
+      <li><a href="${contextPath}/details_notes?id=${customer.id}">Notes</a></li>
+      <li><a href="${contextPath}/details_images?id=${customer.id}">Images</a></li>
+      <li><a href="${contextPath}/details_history?id=${customer.id}">History</a></li>
+      <li><a href="${contextPath}/details_labour?id=${customer.id}">Labour</a></li>
+      <li><a href="${contextPath}/details_parts?id=${customer.id}">Parts</a></li>
+      <li><a href="${contextPath}/details_extra_charges?id=${customer.id}">Extra Charges</a></li>
+      <li><a href="${contextPath}/details_estimate?id=${customer.id}">Estimate</a></li>
     </ul>
   </nav>
 
   <article>
-    <h1>Customer</h1>
-    <p>Details about the customer</p>
+    <h1>Estimate</h1>
+
   </article>
 </section>
 

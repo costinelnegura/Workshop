@@ -105,20 +105,23 @@
 
 <table class="center">
     <tr>
+        <th>ID</th>
         <th>Customer Name</th>
         <th>Vehicle Registration</th>
         <th>Vehicle Make</th>
         <th>Vehicle Model</th>
-        <th>...</th>
     </tr>
 
-    <c:forEach var="claim" items="${claims}">
+
+    <c:forEach var="row" items="${claims}">
         <tr>
-            <th>${claim.salutation} ${claim.first_name} ${claim.last_name}</th>
-            <th>${claim.vehicle_registration}</th>
-            <th>${claim.vehicle_make}</th>
-            <th>${claim.vehicle_model}</th>
-            <th><a href="">Select</a></th>
+            <form action="details_customer">
+                <th><input type="submit" value="${row.id}" name="id"></th>
+            </form>
+            <th>${row.salutation} ${row.first_name} ${row.last_name}</th>
+            <th>${row.vehicle_registration}</th>
+            <th>${row.vehicle_make}</th>
+            <th>${row.vehicle_model}</th>
         </tr>
     </c:forEach>
 </table>
